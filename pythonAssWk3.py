@@ -1,9 +1,4 @@
 
-# Prompting user for input
-
-price = float(input("Enter the original price of the item: ")) # Original price of the item
-discount_percent = float(input("Enter the discount percentage: ")) # Discount percentage to be applied
-
 
 # Calculates the final price after applying a discount.
 
@@ -16,7 +11,11 @@ def calculate_discount(price, discount_percent):
     else:
         return price & print(f"No discount applied. The final price is: ${price}") # Return original price if discount is less than 20%
 
-   
- # Calculate the final price
+    # Prompting user for input
+
+price = float(input("Enter the original price of the item: ")) # Original price of the item
+discount_percent = float(input("Enter the discount percentage: ")) # Discount percentage to be applied
+
+# Calculate the final price
 
 final_price = calculate_discount(price, discount_percent)
